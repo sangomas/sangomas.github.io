@@ -30,8 +30,8 @@ html, body {
   .grid-box {
       grid-template-areas:
         "header header header header header"
-        "logo logo logo logo logo"
         "title title title title title"
+        
         "sidebar sidebar sidebar sidebar sidebar"
         "content content content content content"
         "footer footer footer footer footer"
@@ -64,7 +64,7 @@ html, body {
     }
 
 .box-2 {
-  
+
   color: white;
   grid-area: sidebar;
 }

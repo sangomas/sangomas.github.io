@@ -71,9 +71,30 @@
   <strong>error:</strong> Error importing pygtk2 and pygtk2-libglade:</br>
   sudo apt-get install python-glade2<br>
   sudo apt-get install python-gtk2<br>
+  <br>
   <strong>start GUI:</strong><br>
+  <hr>
   gksu "python /opt/lampp/share/xampp-control-panel/xampp-control-panel.py"<br>
-
+  <hr>
+<br>
+  <strong>fix permission of htdocs:</strong><br>
+  ls –ld /opt/lampp/htdocs<br>
+  sudo chmod -R 777 /opt/lampp/htdocs<br>
+  [whoami & id –gn to get user- and groupname] <br>
+  sudo chown –R [Username]:[Groupname] /opt/lampp/htdocs<br>
+  ls –ld /opt/lampp/htdocs<br>
+  sudo cp /opt/lampp/etc/httpd.conf /opt/lampp/etc/httpd.conf.bak<br>
+  ls /opt/lampp/etc/httpd*<br>
+<br>
+<strong>editing httpd-conf file:</strong>
+  sudo gedit /opt/lampp/etc/httpd.conf<br>
+<br>
+<strong>locate</strong>
+User daemon
+Group daemon
+<small>[approximate 175 line]</small>
+<br>
+<strong>replace daemon with user - and groupname</strong>
 
 
 </article>
