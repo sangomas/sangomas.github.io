@@ -6,6 +6,43 @@ html, body {
   background-color: #4a525a;
 }
 
+
+
+body {
+  padding-top: 5rem;
+}
+
+/* FIX: */
+
+.fixed-top .navbar-collapse {
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
 	-webkit-text-size-adjust: none;
 	margin-top: 0;
